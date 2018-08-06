@@ -1,0 +1,13 @@
+body {
+	background-color: blue;
+}
+
+.portfolio a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+}
+
+.portfolio__link {
+	font-size: 24px;
+}
