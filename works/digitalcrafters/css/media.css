@@ -56,7 +56,7 @@
       top: -50%; }
   .btn--nav {
     font-size: 12px;
-    padding: 5px 20px; }
+    padding: 5px 15px; }
   .btn--banner {
     font-size: 15px;
     font-weight: 400;
@@ -149,7 +149,7 @@
 /*  --- Medium devices (tablets, 768px and up) --- */
 @media screen and (max-width: 991px) {
   .container {
-    width: 550px; }
+    width: 570px; }
     .container--banner {
       width: 500px; }
     .container--about {
