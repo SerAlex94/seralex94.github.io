@@ -65,11 +65,13 @@ input:-webkit-autofill {
     width: 1080px;
     padding: 0 20px; }
   .container--about {
-    width: 910px; }
+    width: 1100px;
+    overflow: hidden; }
   .container--services {
     width: 1680px; }
   .container--portfolio {
-    width: 1680px; }
+    width: 1680px;
+    overflow: hidden; }
   .container--contact {
     width: 910px;
     padding: 0 20px; }
@@ -165,8 +167,7 @@ input:-webkit-autofill {
     -o-transition: 0.5s;
     transition: 0.5s; }
     .btn--nav:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      font-size: 14px; }
+      background-color: rgba(255, 255, 255, 0.3); }
   .btn--banner {
     background-color: #fff;
     text-decoration: none;
@@ -233,19 +234,15 @@ input:-webkit-autofill {
     text-decoration: none;
     padding: 10px 20px; }
   .btn--up {
-    -webkit-transform: scale(5);
-        -ms-transform: scale(5);
-            transform: scale(5);
     position: fixed;
-    bottom: 50px;
-    right: 90px;
+    bottom: 10%;
+    right: 5%;
     text-align: center;
-    width: 20px;
-    height: 10px;
+    padding-top: 8px;
+    width: 80px;
+    height: 40px;
     background: rgba(255, 255, 255, 0.7);
     color: #673fbf;
-    font-size: 9px;
-    padding-top: 1px;
     margin-right: -webkit-calc(-1 * (100vw - 100%));
     margin-right: calc(-1 * (100vw - 100%)); }
 
@@ -333,12 +330,14 @@ input:-webkit-autofill {
 .slick-prev {
   float: left; }
   .slick-prev img {
-    margin-right: 2px; }
+    margin-right: 2px;
+    margin-bottom: 1px; }
 
 .slick-next {
   float: right; }
   .slick-next img {
-    margin-left: 3px; }
+    margin-left: 3px;
+    margin-bottom: 1px; }
 
 .slider-prev,
 .slider-next {
@@ -353,12 +352,12 @@ input:-webkit-autofill {
 .slider-prev {
   margin-right: 5px; }
   .slider-prev img {
-    margin-right: 2px; }
+    margin-left: 3px; }
 
 .slider-next {
   float: right; }
   .slider-next img {
-    margin-left: 3px; }
+    margin-left: 5px; }
 
 /* --- title & text style --- */
 .title {
@@ -436,7 +435,8 @@ input:-webkit-autofill {
   padding: 20px 0; }
 
 .about-client {
-  position: relative; }
+  position: relative;
+  margin: 0 100px; }
   .about-client__img {
     margin: 40px 0 10px; }
   .about-client__quotes {
@@ -456,7 +456,7 @@ input:-webkit-autofill {
           border-radius: 6px;
   background-color: #fff;
   position: relative;
-  padding: 120px 80px 0; }
+  padding: 100px 60px 0; }
   .client__info {
     padding: 40px 0;
     font-weight: 600; }
@@ -496,7 +496,8 @@ input:-webkit-autofill {
   background-color: #fff;
   position: relative; }
   .services-item__text {
-    text-align: left; }
+    text-align: left;
+    line-height: 26px; }
   .services-item__icon-wrapper {
     position: absolute;
     top: -17%;
@@ -512,6 +513,7 @@ input:-webkit-autofill {
     text-align: center;
     padding-top: 38px; }
   .services-item__heading {
+    text-align: left;
     width: 70%;
     padding: 87px 0 0 30px;
     color: #29384d;
