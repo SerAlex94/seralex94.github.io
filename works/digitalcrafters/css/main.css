@@ -245,6 +245,13 @@ input:-webkit-autofill {
     color: #673fbf;
     margin-right: -webkit-calc(-1 * (100vw - 100%));
     margin-right: calc(-1 * (100vw - 100%)); }
+    .btn--up__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
 
 /* --- pulse button --- */
 .btn--banner:hover::after {
