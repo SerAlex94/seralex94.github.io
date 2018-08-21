@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokupon</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	
+</head>
+<body>
+	<form class="search-form">
+		<div class="container">
+			<div class="search-form__logo">
+				<img src="logo.png" alt="">
+			</div>
+			<input class="search-form__input" type="text" placeholder="Введите текст для поиска">
+		    <select class="search-form__select">
+		    	<option class="search-form__select-option" selected disabled>Укажите поисковую систему</option>
+		        <option class="search-form__select-option" value="http://www.google.ru/search?q=">Google</option>
+		        <option class="search-form__select-option" value="https://www.bing.com/search?q=">Bing</option>
+		        <option class="search-form__select-option" value="https://uk.ask.com/web?q=">Ask</option>
+		    </select>
+		    <button type="submit">Искать</button>
+		    <p class="error-message"></p>
+		</div>
+	</form>
+	
+	<script src="./main.js"></script>
+</body>
+</html>
