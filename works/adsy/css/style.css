@@ -159,6 +159,7 @@ textarea::placeholder, input::placeholder{
 }
 
 .contacts-item__info--number{
+	font-weight: 300;
 	font-size: 19px;
 	color: #1abc9c;
 }
@@ -228,6 +229,10 @@ textarea::placeholder, input::placeholder{
     	width: 100%;
 	}
 
+	.form-field{
+		width: 100%;
+	}
+
 	.contact-form{
 		display: flex;
 		align-items: center;
@@ -255,6 +260,7 @@ textarea::placeholder, input::placeholder{
 	    flex-direction: column;
 	    align-items: center;
 	    text-align: center;
+	    margin: 45px 0 50px 0;
 	}
 
 	.footer__btn{
