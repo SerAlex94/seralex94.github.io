@@ -6,16 +6,16 @@
 }
 
 html body ul {
-  list-style: none;
-  padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 html body a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 html body a:focus {
-  outline: none;
+	outline: none;
 }
 
 body {
