@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta NAME="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vinvo</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	<section class="search-form">
+		<div class="container">
+ 			<form class="form">
+ 				<div class="form-field item-arrive">
+ 					<div class="form-field__icon">
+						<img src="./img/ic-pointer.svg" alt="">
+					</div>
+					<label class="form-field__heading" for="arrive">Куда вы хотите поехать?</label>
+					<select name="arrive" id="arrive">
+						<option selected disabled>Укажите страну, город или отель</option>
+						<optgroup label="Места">
+							<option value="Крит">Крит, Греция от $96</option>
+							<option value="Кипр">Остров Кипр, Кипр от $130</option>
+							<option value="Пхукет">Пхукет, Таиланд от $130</option>
+							<option value="Коста-Рика">Коста-Рика от $230</option>
+							<option value="Пекин">Пекин, Китай от $780</option>
+						</optgroup>
+						<optgroup label="Отели">
+							<option value="Краун Плаза Москва">Краун Плаза Москва, Москва, Россия</option>
+							<option value="Краун Плаза Москва">Отель Кайзерхоф, Калининград, Россия</option>
+							<option value="Кантри Резорт Отель">Кантри Резорт Отель, Верблики, Россия</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="form-field item-departure">
+					<div class="form-field__icon">
+			        	<img src="./img/ic-flight.svg" alt="">
+			        </div>
+					<label class="form-field__heading" for="departure">Отправление</label>
+					<select name="departure" id="departure">
+						<option>Одесса</option>
+						<option>Кривой Рог</option>
+						<option selected>Киев</option>
+						<option>Николаев</option>
+						<option>Львов</option>
+					</select>
+				</div>
+				<div class="form-field item-days">
+					<p>
+						<div class="form-field__icon">
+				        	<img src="./img/ic-nights.svg" alt="">
+				    	</div>
+						<label class="form-field__heading" for="days">Количество ночей</label>
+						<input id="days" class="form-field__range" type="text"  readonly>
+					</p>
+					<div class="form-field__slider">
+						<div id="slider-range">
+							<div class="range-count">
+								<span class="range-count__min">1</span>
+								<span class="range-count__max">24</span>
+							</div>
+						</div>
+					</div>					
+				</div>					
+				<button class="form-btn" type="submit">Поиск туров</button>
+			</form>
+			<div class="extended-search">
+				<div class="extended-search__example">Например: 
+					<a href="#">туры в Египет</a>
+				</div>
+				<div class="extended-search__link">
+					<img src="./img/ic-search.svg" alt="">
+					<a href="#">Расширенный подбор</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
