@@ -187,6 +187,25 @@ img {
     cursor: pointer
 }
 
+.action__phone{
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contacts__link{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #timer-form-mini, .header-li, .timer-li {
     display: inline-block
 }
@@ -458,7 +477,7 @@ img {
 
 .apartment-for-sale-ul {
     list-style: none;
-    text-align: right;
+    text-align: center;
     padding: 0 0 50px;
     margin: 0
 }
@@ -636,6 +655,24 @@ img {
 #technologies-form {
     margin-bottom: 90px;
     float: right
+}
+
+.technologies-form-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    display: block;
+    text-align: center
+}
+
+.technologies-form-text {
+    line-height: 19px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 300;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block
 }
 
 .sevensteps {
