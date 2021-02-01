@@ -160,12 +160,11 @@ img {
 }
 
 .header-h1 {
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 700;
     color: #FFF;
     padding: 160px 0 0;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-    letter-spacing: -2px;
 }
 
 .header-h1-mini {
