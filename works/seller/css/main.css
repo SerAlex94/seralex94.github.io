@@ -1369,7 +1369,7 @@ img {
 
 #reviews .loader {
     position: absolute;
-    left: 43%;
+    margin: 0 auto;
     width: 200px;
     z-index: 0
 }
