@@ -165,7 +165,6 @@ img {
     color: #FFF;
     padding: 160px 0 0;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-    letter-spacing: -2px;
 }
 
 .header-h1-mini {
@@ -205,6 +204,59 @@ img {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.social{
+    display: block;
+    margin: 0 auto 20px;
+    width: 60%;
+}
+
+.social__items{
+    display: flex;
+    text-align: center;
+}
+
+.social__link {
+    width: 100%;
+    padding: 10px 10px;
+    width: 33%;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.social__link:hover{
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+
+.whatsapp{
+    background: linear-gradient(180deg,#25D366,#21bf5c);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.viber{
+    background: linear-gradient(180deg,#742ea6,#59267c);
+}
+
+.telegram{
+    background: linear-gradient(180deg,#20b1f5,#169fe3);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.social__img{
+    margin: 0 auto;
+}
+
+.thanks{
+    display: block;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+
+
 
 #timer-form-mini, .header-li, .timer-li {
     display: inline-block
@@ -1349,5 +1401,5 @@ img {
 
 .text-center .header-h4 {
     display: inline-block;
-    padding: 0 25px;
+    padding: 2px 25px 5px;
 }

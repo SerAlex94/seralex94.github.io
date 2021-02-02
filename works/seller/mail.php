@@ -3,10 +3,10 @@
 $recipient = "info.bsky@gmail.com";
 
 # SUBJECT (Subscribe/Remove)
-$subject = "Заявка с сайта bogoslavsky.com/fast";
+$subject = "Заявка с сайта bogoslavsky.com/seller";
 
 # RESULT PAGE
-$location = "action.html";
+$location = "thanks.html";
 
 ## FORM VALUES ##
 
