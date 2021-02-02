@@ -240,7 +240,7 @@ img {
     background: linear-gradient(180deg,#742ea6,#59267c);
 }
 
-.telegram{
+.telega{
     background: linear-gradient(180deg,#20b1f5,#169fe3);
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -1379,6 +1379,16 @@ img {
         left: 35%
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .social{
+        width: 95%;
+    }
+
+    .social__img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
