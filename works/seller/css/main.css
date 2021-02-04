@@ -208,17 +208,19 @@ img {
 .social{
     display: block;
     margin: 0 auto 20px;
-    width: 60%;
+    width: 35%;
 }
 
 .social__items{
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 .social__link {
+    font-size: 11px;
     width: 100%;
-    padding: 10px 10px;
+    padding: 5px 10px;
     width: 33%;
     color: #fff;
     text-decoration: none !important;
@@ -248,6 +250,8 @@ img {
 
 .social__img{
     margin: 0 auto;
+    width: 24px;
+    height: 24px;
 }
 
 .thanks{
