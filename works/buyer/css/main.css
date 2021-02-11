@@ -390,7 +390,7 @@ img {
     margin: 0 auto 10px
 }
 
-.advantages {
+.advantages,.benefits {
     background-image: url(../img/image.png), url(../img/bg_02.jpg);
     background-repeat: no-repeat;
     background-position: 200px 200px, left bottom;
@@ -441,15 +441,22 @@ img {
     color: #0067a8
 }
 
-.advantages-circle-img-1, .advantages-circle-img-2, .advantages-circle-img-3, .advantages-circle-img-4, .advantages-circle-img-5 {
+
+
+.benefits-circle-img-1, .benefits-circle-img-2, .benefits-circle-img-3, .benefits-circle-img-4, .benefits-circle-img-5 {
     margin: 0 auto;
     padding-top: 35px;
     width: 80px;
 }
 
-.advantages-circle-img-1{
-    padding-top: 23px;
+.advantages-circle-img-1, .advantages-circle-img-2, .advantages-circle-img-3, .advantages-circle-img-4, .advantages-circle-img-5 {
+    margin: 0 auto;
+    padding-top: 35px;
 }
+
+/* .advantages-circle-img-1{
+    padding-top: 23px;
+} */
 
 .circle-title {
     font-size: 27px;
