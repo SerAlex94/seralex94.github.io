@@ -39,8 +39,9 @@ a{
 
 /* Style the navbar */
 #navbar {
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, .75) !important;
     overflow: hidden;
+    z-index: 999;
   }
 
 /* Navbar links */
@@ -148,7 +149,7 @@ a{
     padding-bottom: 50px;
 }
 
-.about__heading, .coaching__heading, .clients__heading, .start__heading, .testimonials__heading{
+.about__heading, .coaching__heading, .clients__heading, .start__heading, .testimonials__heading, .contacts__heading{
     font-size: 56px;
     text-align: center;
     margin: 0 40px;
@@ -421,9 +422,10 @@ a{
     margin: 20px;
 }
 
-
-
-
-
 /* Start section end */
+
+.contacts{
+    color: #fff;
+    background-color: #333;
+}
   
