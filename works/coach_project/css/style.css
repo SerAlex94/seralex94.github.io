@@ -78,15 +78,18 @@ a{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 45px;
 }
 
 .coach__heading{
     font-size: 56px;
     text-align: center;
     margin: 0 20px 30px;
-    line-height: 75px;
+    line-height: 40px;
     color: #4fae8d;
 }
+
+
 
 .coach__name{
     color: #4fae8d;
@@ -104,7 +107,34 @@ a{
     padding: 10px 30px;
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
 }
+
+.coach__programm:after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    background: linear-gradient( 
+90deg
+ ,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%);
+    width: 45px;
+    transform: skewX( 
+-22deg
+ );
+    left: -65%;
+    animation-name: blick;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blick {
+    from { left: -50%; }
+    to { left: 150%; }
+   }
+
+
 
 .programm__heading{
     font-weight: 300;
@@ -116,6 +146,8 @@ a{
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
 }
 
 .main__photo-img{
@@ -170,7 +202,7 @@ a{
     text-align: center;
     margin: 0 40px;
     line-height: 75px;
-    padding: 100px 0;
+    padding: 50px 0;
     color: #1571c4;
 }
 
@@ -191,6 +223,10 @@ a{
     text-align: center;
     margin-bottom: 15px;
     font-style: italic;
+}
+
+.about__info-text{
+    text-align: center;
 }
 
 .about__photo{
@@ -221,7 +257,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .coaching__info-block{
@@ -245,11 +281,12 @@ a{
 
 .list__info{
     position: relative;
-    padding: 15px;
+    padding: 5px 15px;
+    text-align: center;
 
 }
 
-.list__info::before{
+/* .list__info::before{
     content: "";
     position: absolute;
     background: #0067a8;
@@ -259,14 +296,14 @@ a{
     left: 0;
     top: 50%;
     transform: translateY(-50%);  
-}
+} */
 
 /* Coaching section end */
 
 /* Clients section start */
 
 .clients{
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 }
 
 .clients__heading-secondary{
@@ -275,7 +312,7 @@ a{
     padding: 10px 30px;
     text-align: center;
     width: 40%;
-    margin: 0 auto 50px;
+    margin: 0 auto 25px;
 }
 
 .clients__inner{
@@ -315,6 +352,9 @@ a{
 .block_middle {
     text-align: center;
 }
+.middle__img{
+    max-width: 200px;
+}
 
 .block_top, .block_bottom{
     position: absolute;
@@ -323,7 +363,7 @@ a{
 }
 .block_bottom{
     width: 70%;
-    bottom: -225px;
+    bottom: -130px;
 }
 
 .block_top{
@@ -412,7 +452,7 @@ a{
     padding: 10px 30px;
     text-align: center;
     line-height: 50px;
-    margin-top: 50px;
+/*     margin-top: 50px; */
 }
 
 .start__info{
@@ -423,6 +463,7 @@ a{
     border: 5px solid #0067a8;
     padding: 10px;
     margin: 30px 10px;
+    border-radius: 10px;
 }
 
 .start__info-heading{
@@ -489,6 +530,21 @@ a{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.testimonials__slider{
+    width: 50%;
+}
+
+.testimonials__item{
+    text-align: center;
+    border-bottom: 1px solid #1571c4;
+    padding-bottom: 18px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #1571c4;
 }
 
 /* Contacts section start */
@@ -496,19 +552,24 @@ a{
 .contacts{
     color: #fff;
     background-color: #333;
+    padding-bottom: 50px;
 }
 
 .contacts__inner{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .contacts__block{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    width: 50%;
+    /* width: 50%; */
+}
+
+.contacts__block-logo, .contacts__block-messenger, .contacts__block-find{
+    width: 30%;
 }
 
 .messenger__info{
@@ -518,31 +579,49 @@ a{
 
 .find__info{
     display: flex;
-    flex-direction: column;
 }
 
-.contacts__photo{
+
+.find__info-item, .messenger__info-item{
+    padding: 15px 10px;
+}
+
+.telega {
+    background: linear-gradient(
+180deg
+,#20b1f5,#169fe3);
+    border-radius: 5px;
+}
+
+.social__img{
+    width: 25px;
+}
+
+.social__link {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-.contacts__photo-img{
-    max-width: 400px;
+    font-size: 12px;
+    padding: 5px 5px;
+    width: 33%;
+    color: #fff;
+    text-decoration: none !important;
 }
 
 .contacts__messenger-heading{
-    padding-right: 20px;
+    /* padding-right: 20px; */
+}
+
+.contacts__block-messenger, .contacts__block-find{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .contacts__messenger-heading, .contacts__find-heading{
     font-size: 24px;
     margin-bottom: 15px;
-}
-
-.find__info-item, .messenger__info-item{
-padding: 15px 0;
 }
 
 .contacts__photo-btn{
