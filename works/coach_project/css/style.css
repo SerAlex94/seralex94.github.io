@@ -607,10 +607,6 @@ a{
     text-decoration: none !important;
 }
 
-.contacts__messenger-heading{
-    /* padding-right: 20px; */
-}
-
 .contacts__block-messenger, .contacts__block-find{
     display: flex;
     align-items: center;
@@ -655,3 +651,8 @@ a{
 
 /* Footer section end */
   
+
+.timer{
+    background: #333;
+    height: 150px;
+}
