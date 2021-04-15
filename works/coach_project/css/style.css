@@ -696,8 +696,12 @@ a{
 
 .find__info-item, .messenger__info-item{
     padding: 15px 10px;
-    margin: 0px 10px;
 }
+
+.find__info-item + .find__info-item{
+    margin-left: 10px;
+}
+
 
 .kyivstar{
     position: relative;
@@ -709,7 +713,7 @@ a{
     height: 40px;
     content: '';
     position: absolute;
-    background: url(../img/kyivstar-logo.png);
+    background: url(../img/kyivstar-icon.svg);
     background-size: contain;
     left: 0;
     top: 50%;
@@ -718,7 +722,7 @@ a{
 
 .gmail{
     position: relative;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 .gmail::before{
@@ -726,8 +730,7 @@ a{
     height: 40px;
     content: '';
     position: absolute;
-    background: url(../img/gmail-logo.jpeg);
-    background-size: contain;
+    background: url(../img/gmail-icon.svg) no-repeat center;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -822,12 +825,47 @@ a{
     display: flex;
     align-items: center;
     justify-content: start;
+    padding: 0 25px;
 }
 
 /* Footer section end */
   
 
-.timer{
+.footer{
     background: #333;
     height: 150px;
+}
+
+.footer__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__inner-heading{
+    font-size: 28px;
+    color: #fff;
+    font-style: italic;
+}
+
+.timer{
+    width: 30%;
+}
+
+.footer__btn{
+    background: #ffcd00;
+    border-radius: 2px;
+    /* display: block; */
+    cursor: pointer;
+    font-size: 17px;
+    color: #121212;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    width: 25%;
+    text-align: center;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in 0.2s;
 }
