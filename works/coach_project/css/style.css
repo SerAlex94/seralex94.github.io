@@ -108,6 +108,7 @@ a{
     text-align: center;
     margin-bottom: 50px;
     position: relative;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -146,13 +147,13 @@ a{
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
 }
 
 .main__photo-img{
     max-width: 400px;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .main__btn{
@@ -168,7 +169,29 @@ a{
     width: 50%;
     margin: 10px auto;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
 }
+.main__btn::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    background: linear-gradient( 
+90deg
+ ,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%);
+    width: 45px;
+    transform: skewX( 
+-22deg
+ );
+    left: -65%;
+    animation-name: blick;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
 
 .coaching__btn{
     background: #ffcd00;
@@ -183,6 +206,34 @@ a{
     width: 33%;
     margin: 10px auto;
     text-align: center;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in 0.2s;
+}
+
+.coaching__btn:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 5px grey;
+    background: #1571c4;
+}
+
+.coaching__btn::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    background: linear-gradient( 
+90deg
+ ,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%);
+    width: 45px;
+    transform: skewX( 
+-22deg
+ );
+    left: -65%;
+    animation-name: blick;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .btn__consultation{
@@ -231,7 +282,7 @@ a{
 
 .about__photo{
     max-width: 600px;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .about__certificates{
@@ -311,8 +362,11 @@ a{
     color: #fff;
     padding: 10px 30px;
     text-align: center;
-    width: 40%;
+    width: 46%;
     margin: 0 auto 25px;
+    border-radius: 15px;
+    padding: 26px;
+    font-size: 20px;
 }
 
 .clients__inner{
@@ -354,6 +408,7 @@ a{
 }
 .middle__img{
     max-width: 200px;
+    margin-left: 10px;
 }
 
 .block_top, .block_bottom{
@@ -425,6 +480,26 @@ a{
     font-weight: 800;
     font-family: "Open Sans", sans-serif;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.clients__btn::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    background: linear-gradient( 
+90deg
+ ,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%);
+    width: 45px;
+    transform: skewX( 
+-22deg
+ );
+    left: -65%;
+    animation-name: blick;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 /* Clients section end */
@@ -452,6 +527,7 @@ a{
     padding: 10px 30px;
     text-align: center;
     line-height: 50px;
+    border-radius: 15px;
 /*     margin-top: 50px; */
 }
 
@@ -487,6 +563,7 @@ a{
     color: #fff;
     padding: 10px 30px;
     text-align: center;
+    border-radius: 15px;
 }
 
 .start__price{
@@ -521,7 +598,29 @@ a{
     text-align: center;
     padding: 15px;
     margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
 }
+
+.start__price-cut::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    background: linear-gradient( 
+90deg
+ ,rgba(255,255,255,0.1),rgba(255,255,255,0.6) 100%);
+    width: 45px;
+    transform: skewX( 
+-22deg
+ );
+    left: -65%;
+    animation-name: blick;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 
 /* Start section end */
 
@@ -534,7 +633,7 @@ a{
 }
 
 .testimonials__slider{
-    width: 50%;
+    width: 75%;
 }
 
 .testimonials__item{
@@ -543,8 +642,21 @@ a{
     padding-bottom: 18px;
 }
 
+.slick-slide img{
+    width: 100%;
+}
+
 .slick-prev:before, .slick-next:before{
     color: #1571c4;
+    font-size: 35px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev {
+    left: -65px;
 }
 
 /* Contacts section start */
@@ -584,12 +696,66 @@ a{
 
 .find__info-item, .messenger__info-item{
     padding: 15px 10px;
+    margin: 0px 10px;
+}
+
+.kyivstar{
+    position: relative;
+    padding-left: 40px;
+}
+
+.kyivstar::before{
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    background: url(../img/kyivstar-logo.png);
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gmail{
+    position: relative;
+    padding-left: 40px;
+}
+
+.gmail::before{
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    background: url(../img/gmail-logo.jpeg);
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .telega {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    color: #fff;
+    text-decoration: none !important;
     background: linear-gradient(
 180deg
 ,#20b1f5,#169fe3);
+    border-radius: 5px;
+}
+
+.instagram{
+    background: linear-gradient( 
+225deg
+ ,#405DE6,#C13584);
+    border-radius: 5px;
+}
+
+.facebook{
+    background: linear-gradient( 
+225deg
+ ,#4267B2,#169fe3);
     border-radius: 5px;
 }
 
@@ -605,6 +771,15 @@ a{
     width: 33%;
     color: #fff;
     text-decoration: none !important;
+}
+
+.contacts__logo-img{
+    max-height: 80px;
+    max-width: 250px;
+}
+
+.contacts__logo-img+.contacts__logo-img{
+    margin-top: 20px;
 }
 
 .contacts__block-messenger, .contacts__block-find{
