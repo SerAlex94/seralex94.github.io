@@ -1,22 +1,80 @@
-@media screen and (max-height:900px) {
-	.coach__heading {
+@media screen and (max-width:1200px) {
+	.main__info {
+		padding-top: 150px;
+	}
+	.coach {
+		margin-top: 35px;
+	}
+	.coach__heading, .coach__name {
 		font-size: 46px;
-		line-height: 30px;
+		margin: 0 20px 20px;
+	}
+}
+@media screen and (max-width:1000px) {
+	.logo__img {
+		max-width: 240px;
+	}
+	.coach__heading, .coach__name {
+		font-size: 35px;
+	}
+	.programm__heading {
+		font-size: 30px;
+	}
+	.programm__name {
+		font-size: 30px;
 	}
 	.main__photo-img {
 		max-width: 350px;
 	}
-	.main__info {
-		padding-top: 150px;
+	.about__content {
+		flex-wrap: wrap;
+	}
+	.contacts__messenger-heading, .contacts__find-heading {
+		font-size: 20px;
+	}
+	
+	
+	
+	
+}
+@media screen and (max-width:900px) {
+	
+	.coach__programm {
+		padding: 5px 15px;
+		margin-bottom: 30px;
+	}
+	.programm__heading {
+		font-size: 24px;
+	}
+	.programm__name {
+		font-size: 22px;
+	}
+	.about__heading, .coaching__heading, .clients__heading, .start__heading, .testimonials__heading, .contacts__heading {
+		font-size: 36px;
+		padding: 20px 0;
+	}
+	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
+		font-size: 14px;
+	}
+	.btn {
+		padding: 5px 20px;
 	}
 }
-@media screen and (max-width:992px) {
-	
-}
-@media screen and (max-width:768px) {
-	
-}
-@media screen and (max-width:576px) {
+@media screen and (max-width:700px) {
+	.main__photo-img {
+		max-width: 250px;
+	}
+	.coach__heading, .coach__name {
+		font-size: 20px;
+		margin: 0 15px 15px;
+	}
+	.programm__heading, .programm__name {
+		font-size: 20px;
+	}
+	.start__heading-title, .start__next {
+		font-size: 22px;
+		padding: 5px 10px;
+	}
 	
 }
 @media screen and (max-width: 992px) {
