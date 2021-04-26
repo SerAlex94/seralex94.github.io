@@ -4,3 +4,9 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function() {
+  $('.navi__btn').click(function(){
+      $(this).toggleClass('active');
+      $('.navi').slideToggle(400);
+  });
+});

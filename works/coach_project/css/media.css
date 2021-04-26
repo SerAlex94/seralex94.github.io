@@ -11,6 +11,9 @@
 	}
 }
 @media screen and (max-width:1000px) {
+	.navi__link+.navi__link {
+		margin-left: 15px;
+	}
 	.logo__img {
 		max-width: 240px;
 	}
@@ -33,15 +36,52 @@
 		font-size: 20px;
 	}
 	
-	
-	
-	
 }
 @media screen and (max-width:900px) {
-	
+	.navi{
+		display: none;
+		position: absolute;
+    	top: 100px;
+    	width: 100%;
+		left: 0;
+    	right: 0;
+		padding: 0 15px;
+		z-index: 2;
+	}
+
+	.navi__list{
+		display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	flex-direction: column;
+		border-radius: 15px;
+		background: rgba(21, 113, 196, 0.7)
+	}
+	.navi__link{
+		margin: 15px 0;
+	}
+	.navi__link+.navi__link {
+		margin-left: 0;
+	}
+	.navi__link-item{
+		color: #fff;
+	}
+	.navi__link-item:hover{
+		border-bottom: 1px solid #fff;
+	}
+	.navi__btn{
+		display: flex;
+	}
+	.main__photo-img {
+		max-width: 300px;
+		margin: 10px;
+	}
 	.coach__programm {
 		padding: 5px 15px;
 		margin-bottom: 30px;
+	}
+	.coach__heading, .coach__name {
+		font-size: 24px;
 	}
 	.programm__heading {
 		font-size: 24px;
@@ -59,6 +99,19 @@
 	.btn {
 		padding: 5px 20px;
 	}
+	.contacts__block-find{
+		margin-top: 15px;
+	}
+	.footer__inner{
+		display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    	justify-content: space-around;
+	}
+
+	.footer__inner-heading, .timer{
+		padding-bottom: 15px;
+	}
 }
 @media screen and (max-width:700px) {
 	.main__photo-img {
@@ -68,6 +121,15 @@
 		font-size: 20px;
 		margin: 0 15px 15px;
 	}
+	.coaching__info-block, .clients__block {
+		width: 80%;
+	}
+	.clients__block-inner{
+		flex-direction: column;
+	}
+	.block_top::after,.block_top::before,.block_bottom::before,.block_bottom::after{
+		display: none;
+	}
 	.programm__heading, .programm__name {
 		font-size: 20px;
 	}
@@ -75,18 +137,61 @@
 		font-size: 22px;
 		padding: 5px 10px;
 	}
+	.start__info {
+		width: 80%;
+	}
+	.footer__inner {
+		flex-direction: column;
+	}
+	.timer {
+		width: 100%;
+		padding: 10px;
+	}
 	
 }
-@media screen and (max-width: 992px) {
-	
+@media screen and (max-width: 600px) {
+	.programm__heading {
+		letter-spacing: 2px;
+	}
+	.about__photo {
+		max-width: 500px;
+	}
+	.start__inner {
+		padding-bottom: 15px;
+	}
 }
 
-@media screen and (max-width: 768px) {
-	
+@media screen and (max-width: 500px) {
+	.main__info {
+		padding-top: 150px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.about__photo {
+		max-width: 400px;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	
+	.about__photo {
+		max-width: 350px;
+	}
+	.clients__heading-secondary {
+		width: 80%;
+	}
+	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
+		width: 80%;
+	}
+	.find__info {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.find__info-item {
+		margin: 10px;
+	}
 }
 
 @media screen and (max-width: 576px) {

@@ -26,6 +26,25 @@ a{
 
 /* Btn styles start */
 
+/* Btn hamburger start */
+.navi__btn{
+    width: 30px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+}
+.navi__btn span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+
+/* Btn hamburger end */
+
 .btn{
     display: block;
     padding: 20px 40px;
@@ -103,13 +122,13 @@ a{
     max-width: 340px;
 }
 
-.navi{
+.navi__list{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navi__link{
+.navi__link-item{
     color: #1571c4;
     text-decoration: none;
 }
@@ -118,7 +137,7 @@ a{
     margin-left: 25px;
 }
 
-.navi__link:hover{
+.navi__link-item:hover{
     border-bottom: 1px solid #1571c4;
 }
 
@@ -249,6 +268,10 @@ a{
 
 .certificate__img{
     width: 70%;
+}
+
+.blue{
+    color: #1571c4;
 }
 
 /* About section end */
@@ -437,7 +460,7 @@ a{
 
 .start{
     background: url(../img/start-bg.jpg) center no-repeat;
-    background-size: 100%;
+/*     background-size: 100%; */
     padding-bottom: 50px;
 }
 
@@ -628,6 +651,40 @@ a{
     transform: translateY(-50%);
 }
 
+.whatsapp{
+    position: relative;
+    padding-left: 40px;
+}
+
+.whatsapp::before{
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    background: url(../img/whatsapp-ico.svg);
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.viber{
+    position: relative;
+    padding-left: 40px;
+}
+
+.viber::before{
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    background: url(../img/viber-ico.svg);
+    background-size: contain;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .gmail{
     position: relative;
     padding-left: 55px;
@@ -682,9 +739,9 @@ a{
     max-height: 80px;
     max-width: 250px;
 }
-.ipact{
+/* .ipact{
     max-width: 300px;
-}
+} */
 
 .contacts__logo-img+.contacts__logo-img{
     margin-top: 20px;
