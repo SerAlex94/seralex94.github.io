@@ -99,6 +99,15 @@
 	.btn {
 		padding: 5px 20px;
 	}
+	.clients__block {
+		width: 80%;
+	}
+	.clients__block-inner{
+		flex-direction: column;
+	}
+	.block_top::after,.block_top::before,.block_bottom::before,.block_bottom::after{
+		display: none;
+	}
 	.contacts__block-find{
 		margin-top: 15px;
 	}
@@ -114,6 +123,9 @@
 	}
 }
 @media screen and (max-width:700px) {
+	.logo__img {
+		max-width: 200px;
+	}
 	.main__photo-img {
 		max-width: 250px;
 	}
@@ -121,14 +133,8 @@
 		font-size: 20px;
 		margin: 0 15px 15px;
 	}
-	.coaching__info-block, .clients__block {
+	.coaching__info-block {
 		width: 80%;
-	}
-	.clients__block-inner{
-		flex-direction: column;
-	}
-	.block_top::after,.block_top::before,.block_bottom::before,.block_bottom::after{
-		display: none;
 	}
 	.programm__heading, .programm__name {
 		font-size: 20px;
@@ -172,14 +178,18 @@
 	.about__photo {
 		max-width: 400px;
 	}
+	.clients__heading-secondary {
+		width: 80%;
+		padding: 20px;
+	}
+	.testimonials__slider {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 400px) {
 	.about__photo {
 		max-width: 350px;
-	}
-	.clients__heading-secondary {
-		width: 80%;
 	}
 	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
 		width: 80%;
@@ -191,6 +201,19 @@
 	}
 	.find__info-item {
 		margin: 10px;
+	}
+	.start__heading-title{
+		font-size: 20px;
+	}
+	.start__info-heading {
+		font-size: 18px;
+		text-align: center;
+	}
+	.start__info-main {
+		text-align: center;
+	}
+	.start__info-price {
+		text-align: center;
 	}
 }
 
