@@ -215,6 +215,12 @@
 	.start__info-price {
 		text-align: center;
 	}
+	.dexc{
+		display: none;
+	}
+	.mob{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 576px) {

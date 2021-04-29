@@ -822,6 +822,10 @@ a{
     width: 30%;
 } */
 
+.mob{
+    display: none;
+}
+
 /* Footer section end */
 
 
