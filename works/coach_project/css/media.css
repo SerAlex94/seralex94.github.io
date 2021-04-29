@@ -160,7 +160,7 @@
 		letter-spacing: 2px;
 	}
 	.about__photo {
-		max-width: 500px;
+		max-width: 100%;
 	}
 	.start__inner {
 		padding-bottom: 15px;
@@ -188,9 +188,9 @@
 }
 
 @media screen and (max-width: 400px) {
-	.about__photo {
+/* 	.about__photo {
 		max-width: 350px;
-	}
+	} */
 	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
 		width: 80%;
 	}
@@ -214,6 +214,9 @@
 	}
 	.start__info-price {
 		text-align: center;
+	}
+	.footer__inner-heading {
+		font-size: 14px;
 	}
 	.dexc{
 		display: none;
