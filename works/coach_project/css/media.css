@@ -93,7 +93,7 @@
 		font-size: 36px;
 		padding: 20px 0;
 	}
-	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
+	.main__btn, .coaching__btn, .footer__btn {
 		font-size: 14px;
 	}
 	.btn {
@@ -159,11 +159,20 @@
 	.programm__heading {
 		letter-spacing: 2px;
 	}
+	.clients__heading-secondary{
+		width: 80%;
+	}
+	.start__heading-title, .start__next, .start__price-btn{
+		width: 80%;
+	}
 	.about__photo {
 		max-width: 100%;
 	}
 	.start__inner {
 		padding-bottom: 15px;
+	}
+	.popup__form {
+		width: 350px;
 	}
 }
 
@@ -175,15 +184,18 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	.about__photo {
+/* 	.about__photo {
 		max-width: 400px;
-	}
+	} */
 	.clients__heading-secondary {
 		width: 80%;
 		padding: 20px;
 	}
 	.testimonials__slider {
 		width: 90%;
+	}
+	.start__price-btn {
+		font-size: 22px;
 	}
 }
 
@@ -193,6 +205,21 @@
 	} */
 	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
 		width: 80%;
+	}
+	.coaching__info-block {
+		width: 95%;
+		padding: 5px;
+    	margin: 30px 5px;
+	}
+	.clients__heading-secondary {
+		width: 95%;
+		padding: 15px;
+	}
+	.clients__block {
+		width: 95%;
+	}
+	.clients__block-list {
+		padding: 10px;
 	}
 	.find__info {
 		flex-wrap: wrap;
@@ -217,6 +244,9 @@
 	}
 	.footer__inner-heading {
 		font-size: 14px;
+	}
+	.popup__form {
+		width: 300px;
 	}
 	.desc{
 		display: none;

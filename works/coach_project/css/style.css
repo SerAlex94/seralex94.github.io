@@ -324,15 +324,15 @@ a{
 }
 
 .list__info::before{
-    content: '';
+    content: '➕';
     position: absolute;
     display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    top: 25%;
-    left: 0;
-    background-color: #0067a8;
+    /* width: 10px;
+    height: 10px; */
+    /* border-radius: 50%; */
+    top: 10%;
+    left: -10px;
+    /* background-color: #0067a8; */
 }
 
 /* Coaching section end */
@@ -347,7 +347,6 @@ a{
     width: 40%;
     margin: 0 auto 25px;
     border-radius: 15px;
-    padding: 26px;
     font-size: 20px;
 }
 .clients__inner{
@@ -506,24 +505,30 @@ a{
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    border: 5px solid #0067a8;
+    border: 5px solid #1571c4;
     padding: 10px;
     margin: 30px 10px;
     border-radius: 10px;
 }
 
 .start__info-heading{
+    text-align: center;
     font-size: 24px;
 }
 
 .start__info-main{
+    text-align: center;
     line-height: 30px;
     margin: 10px 0;
+    font-size: 26px;
+    border-bottom: 1px solid #000;
+    line-height: 42px;
 }
 
 .start__info-price{
-    font-size: 24px;
+    font-size: 34px;
     color: #ffcd00;
+    font-weight: bold;
 }
 
 .start__next{
@@ -541,6 +546,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.start__price-btn{
+    width: 45%;
+    font-size: 26px;
 }
 
 .start__price-full{
@@ -831,8 +841,11 @@ a{
 
 /* popup */
 
-.popup {
+.request-popup, .buy-popup {
     display: none;
+}
+
+.popup {
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -894,4 +907,15 @@ a{
     margin: 30px 10px;
     border-radius: 10px;
     text-align: center;
+}
+
+.btn__up-img{
+    cursor: pointer;
+    transform: rotate(180deg);
+    width: 50px;
+    background: #ffcd00;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
 }
