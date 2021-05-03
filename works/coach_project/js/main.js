@@ -8,7 +8,7 @@ $(document).ready(function(){
       }
     ]
   });
-  
+
   $('.navi__btn').click(function(){
     $(this).toggleClass('active');
     $('.navi').slideToggle(400);
@@ -35,7 +35,7 @@ $(document).ready(function(){
   });
 
   //E-mail Ajax Send
-  $("popup__form").submit(function() { //Change
+  $(".popup__form").submit(function() { //Change
     var th = $(this);
     $.ajax({
       type: "POST",
