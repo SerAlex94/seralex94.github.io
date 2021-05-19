@@ -847,9 +847,9 @@ a{
     font-style: italic;
 }
 
-/* .timer{
-    width: 30%;
-} */
+.footer__inner-heading, .timer, .footer__btn{
+    width: 33%;
+}
 
 .mob{
     display: none;
@@ -930,7 +930,6 @@ a{
 
 .btn__up-img{
     cursor: pointer;
-/*     transform: rotate(180deg); */
     width: 60px;
     background: #ffcd00;
     border-radius: 50%;
