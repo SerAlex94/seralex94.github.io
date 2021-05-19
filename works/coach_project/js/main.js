@@ -1,3 +1,15 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.background = "rgba(21, 113, 196, 0.7)",
+    document.getElementById("navi").style.color = "#fff";
+  } else {
+    document.getElementById("header").style.background = "none",
+    document.getElementById("navi").style.color = "#1571c4";
+  }
+}
+
 $(document).ready(function(){
   $('.testimonials__slider').slick({
     dots: true,
@@ -31,6 +43,11 @@ $(document).ready(function(){
 
   $(".js-scroll-to-top").click(function() {
     $("html, body").animate({ scrollTop: 0}, "medium");
+    return false;
+  });
+
+  $(".contacts__logo-img").click(function() {
+    $("html, body").animate({ scrollTop: 0}, "low");
     return false;
   });
 

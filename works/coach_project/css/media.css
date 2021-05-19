@@ -156,6 +156,9 @@
 	
 }
 @media screen and (max-width: 600px) {
+	.menu {
+		padding: 5px 0;
+	}
 	.programm__heading {
 		letter-spacing: 2px;
 	}
@@ -173,6 +176,12 @@
 	}
 	.popup__form {
 		width: 350px;
+	}
+	.footer {
+		padding: 10px 0;
+	}
+	.footer__inner-heading {
+		font-size: 16px;
 	}
 }
 
@@ -196,6 +205,12 @@
 	}
 	.start__price-btn {
 		font-size: 22px;
+	}
+	.footer__btn{
+		font-size: 10px;
+	}
+	.btn__up-img {
+		width: 40px;
 	}
 }
 

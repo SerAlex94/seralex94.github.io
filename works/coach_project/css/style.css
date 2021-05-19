@@ -112,6 +112,14 @@ a{
 
 /* Header styles start */
 
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -123,6 +131,10 @@ a{
     max-width: 340px;
 }
 
+.navi{
+    color: #1571c4;
+}
+
 .navi__list{
     display: flex;
     align-items: center;
@@ -130,7 +142,6 @@ a{
 }
 
 .navi__link-item{
-    color: #1571c4;
     text-decoration: none;
 }
 
@@ -148,7 +159,7 @@ a{
 /* Main section start */
 .main{
     padding: 0 0 50px;
-    margin-top: -115px;
+/*     margin-top: -115px; */
     background-image: url(../img/bg_02.jpg);
 /*     height: 100vh; */
 }
@@ -170,7 +181,7 @@ a{
 .coach__heading, .coach__name{
     font-size: 56px;
     text-align: center;
-    margin: 0 15px 30px;
+    margin: 0 15px 0px;
     color: #4fae8d;
 }
 
@@ -179,7 +190,7 @@ a{
     color: #fff;
     padding: 10px 30px;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 30px 0 50px;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -624,6 +635,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 33%;
 }
 
 /* .contacts__block{
@@ -644,6 +656,9 @@ a{
 
 .find__info{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .find__info-item, .messenger__info-item{
@@ -654,6 +669,7 @@ a{
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
 
@@ -766,6 +782,7 @@ a{
 .contacts__logo-img{
     max-height: 80px;
     max-width: 250px;
+    cursor: pointer;
 }
 /* .ipact{
     max-width: 300px;
@@ -773,6 +790,7 @@ a{
 
 .contacts__logo-img+.contacts__logo-img{
     margin-top: 20px;
+    width: 33%;
 }
 
 .contacts__block-messenger, .contacts__block-find{
@@ -781,6 +799,7 @@ a{
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    width: 33%;
 }
 
 .contacts__messenger-heading, .contacts__find-heading{
