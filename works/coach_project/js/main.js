@@ -2,7 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.background = "rgba(21, 113, 196, 0.7)",
+    document.getElementById("header").style.background = "rgba(21, 113, 196, 0.8)",
     document.getElementById("navi").style.color = "#fff";
   } else {
     document.getElementById("header").style.background = "none",
@@ -21,10 +21,24 @@ $(document).ready(function(){
     ]
   });
 
-  $('.navi__btn').click(function(){
-    $(this).toggleClass('active');
+  $('.navi__btn').on("click", function(){
+    $('.navi__btn').addClass('active');
     $('.navi').slideToggle(400);
   });
+
+  $('.navi__list').on("click", function(){
+    $('.navi__btn').removeClass('active');
+    $('.navi').slideToggle(400);
+  });
+  
+
+ /*  $('.navi__btn').click(function(){
+    $(this).toggleClass('active');
+    $('.navi').slideToggle(400);
+    $('.navi__list').on("click", function(){
+      $('.navi__btn').removeClass('active');
+    });
+  }); */
 
   $(".request-open-popup").click(function() {
     $(".request-popup").fadeIn(300);
@@ -46,7 +60,7 @@ $(document).ready(function(){
     return false;
   });
 
-  $(".contacts__logo-img").click(function() {
+  $(".logo__img,.contacts__logo-img").click(function() {
     $("html, body").animate({ scrollTop: 0}, "low");
     return false;
   });

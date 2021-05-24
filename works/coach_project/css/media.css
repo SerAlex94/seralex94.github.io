@@ -1,6 +1,6 @@
 @media screen and (max-width:1200px) {
 	.main__info {
-		padding-top: 150px;
+		padding-top: 80px;
 	}
 	.coach {
 		margin-top: 35px;
@@ -54,7 +54,7 @@
     	align-items: center;
     	justify-content: space-between;
     	flex-direction: column;
-		border-radius: 15px;
+	/* 	border-radius: 15px; */
 		background: rgba(21, 113, 196, 0.7)
 	}
 	.navi__link{
@@ -156,6 +156,9 @@
 	
 }
 @media screen and (max-width: 600px) {
+	.navi{
+		padding: 0px;
+	}
 	.menu {
 		padding: 5px 0;
 	}
@@ -187,15 +190,16 @@
 
 @media screen and (max-width: 500px) {
 	.main__info {
-		padding-top: 150px;
+		padding-top: 80px;
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-between;
 	}
-/* 	.about__photo {
-		max-width: 400px;
-	} */
+	.about__heading, .coaching__heading, .clients__heading, .start__heading, .testimonials__heading, .contacts__heading {
+		font-size: 36px;
+		padding: 60px 0;
+	}
 	.clients__heading-secondary {
 		width: 80%;
 		padding: 20px;
@@ -212,12 +216,16 @@
 	.btn__up-img {
 		width: 40px;
 	}
+	.find__info-item + .find__info-item {
+		margin-left: 0px;
+	}
+	.contacts__inner {
+		align-items: center;
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 400px) {
-/* 	.about__photo {
-		max-width: 350px;
-	} */
 	.main__btn, .coaching__btn, .start__price-btn, .footer__btn {
 		width: 80%;
 	}
@@ -242,7 +250,8 @@
 		justify-content: space-around;
 	}
 	.find__info-item {
-		margin: 10px;
+		width: 100%;
+		margin: 10px 0;
 	}
 	.start__heading-title{
 		font-size: 20px;
@@ -272,6 +281,9 @@
 	}
 	.btn__up-img {
 		bottom: 15%;
+	}
+	.footer__btn {
+		padding: 5px 10px;
 	}
 }
 
