@@ -45,7 +45,7 @@
     	width: 100%;
 		left: 0;
     	right: 0;
-		padding: 0 15px;
+		padding: 0;
 		z-index: 2;
 	}
 
@@ -162,6 +162,9 @@
 	.menu {
 		padding: 5px 0;
 	}
+	.main__photo-img {
+		max-width: 220px;
+	}
 	.programm__heading {
 		letter-spacing: 2px;
 	}
@@ -185,6 +188,13 @@
 	}
 	.footer__inner-heading {
 		font-size: 16px;
+	}
+	.find__info-item + .find__info-item {
+		margin-left: 0px;
+	}
+	.contacts__inner {
+		align-items: center;
+		flex-direction: column;
 	}
 }
 
@@ -215,13 +225,6 @@
 	}
 	.btn__up-img {
 		width: 40px;
-	}
-	.find__info-item + .find__info-item {
-		margin-left: 0px;
-	}
-	.contacts__inner {
-		align-items: center;
-		flex-direction: column;
 	}
 }
 
