@@ -99,6 +99,10 @@ a{
     overflow: hidden;
 }
 
+.btn__footer-width{
+    width: 33%;
+}
+
 /* Btn styles end */
 
 /* Heading styles start */
@@ -144,6 +148,8 @@ a{
 
 .navi__link-item{
     text-decoration: none;
+    display: block;
+    width: 100%;
 }
 
 .navi__link+.navi__link{

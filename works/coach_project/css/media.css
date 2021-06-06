@@ -60,10 +60,15 @@
     	justify-content: space-between;
     	flex-direction: column;
 	/* 	border-radius: 15px; */
-		background: rgba(51, 51, 51, 0.8)
+		background: rgba(0, 0, 0, 0.8)
 	}
 	.navi__link{
 		margin: 15px 0;
+		margin: 5px 0;
+    	width: 100%;
+    	text-align: center;
+    	padding-bottom: 5px;
+    	border-bottom: 1px solid grey;
 	}
 	.navi__link+.navi__link {
 		margin-left: 0;
@@ -240,11 +245,22 @@
 	.start__price-btn {
 		font-size: 22px;
 	}
+	.footer__inner-heading {
+		font-size: 14px;
+		width: 50%;
+		padding-bottom: 5px;
+	}
 	.footer__btn{
 		font-size: 10px;
 	}
 	.btn__up-img {
 		width: 40px;
+	}
+	.btn__footer-width {
+		width: 100%;
+	}
+	.contacts__heading{
+		padding-bottom: 30px;
 	}
 }
 
@@ -290,9 +306,6 @@
 	.start__info-price {
 		text-align: center;
 	}
-	.footer__inner-heading {
-		font-size: 14px;
-	}
 	.popup__form {
 		width: 300px;
 	}
@@ -310,9 +323,3 @@
 	}
 }
 
-@media screen and (max-width: 576px) {
-	
-}
-@media screen and (max-width: 400px) {
-	
-}
