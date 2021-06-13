@@ -217,6 +217,10 @@
 	.footer__inner-heading {
 		font-size: 16px;
 	}
+	.contacts__block-logo {
+		width: 100%;
+		padding: 0 0 20px 0;
+	}
 	/* .find__info-item + .find__info-item {
 		margin-left: 0px;
 	} */
