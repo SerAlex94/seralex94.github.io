@@ -153,6 +153,9 @@
 	.tablet{
 		display: block;
 	}
+	.mob{
+		display: block;
+	}
 	
 	.coach__heading, .coach__name {
 		font-size: 20px;
@@ -214,9 +217,9 @@
 	.footer__inner-heading {
 		font-size: 16px;
 	}
-	.find__info-item + .find__info-item {
+	/* .find__info-item + .find__info-item {
 		margin-left: 0px;
-	}
+	} */
 	.contacts__inner {
 		align-items: center;
 		flex-direction: column;
@@ -309,15 +312,10 @@
 	.popup__form {
 		width: 300px;
 	}
-	.desc{
-		display: none;
-	}
-	.mob{
-		display: block;
-	}
-	.btn__up-img {
+	
+	/* .btn__up-img {
 		bottom: 15%;
-	}
+	} */
 	.footer__btn {
 		padding: 5px 10px;
 	}
