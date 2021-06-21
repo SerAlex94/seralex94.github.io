@@ -138,6 +138,7 @@ a{
 
 .navi{
     color: #1571c4;
+    display: block;
 }
 
 .navi__list{
@@ -934,4 +935,9 @@ a{
 
 .active{
     display: block;
+}
+
+
+.menu-toggle {
+	display: none;
 }
