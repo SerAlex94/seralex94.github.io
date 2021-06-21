@@ -1,4 +1,16 @@
-window.onscroll = function() {scrollFunction()};
+$(document).ready(function() {
+  $('.navi__btn').click(function() {
+    $('.navi').slideToggle(400);
+    $('.navi').toggleClass('open-menu');
+  });
+});
+
+
+
+
+
+
+/* window.onscroll = function() {scrollFunction()};
 
 if($(window).width() > 900)
   {
@@ -21,7 +33,7 @@ if($(window).width() > 900)
       $('.navi').removeClass('active');
       $('.navi').slideToggle(400);
     });
-  }
+  } */
 
 
 $(document).ready(function(){
