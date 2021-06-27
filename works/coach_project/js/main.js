@@ -1,15 +1,12 @@
+
 $(document).ready(function() {
   $('.navi__btn').click(function() {
     $('.navi').slideToggle(400);
     $('.navi').toggleClass('open-menu');
-      
   });
 });
 
-window.onresize = function(event)
-{
-document.location.reload(true);
-}
+
 
 
 

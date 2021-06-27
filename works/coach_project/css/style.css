@@ -935,11 +935,18 @@ a{
     padding: 5px;
 }
 
-.active{
+/* .active{
     display: block;
 }
 
 
 .menu-toggle {
 	display: none;
+} */
+
+@media (min-width: 901px){
+    .navi {
+        display: flex !important;
+    }
 }
+    
