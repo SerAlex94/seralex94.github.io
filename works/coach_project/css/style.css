@@ -935,18 +935,17 @@ a{
     padding: 5px;
 }
 
-/* .active{
-    display: block;
-}
-
-
-.menu-toggle {
-	display: none;
-} */
-
 @media (min-width: 901px){
     .navi {
         display: flex !important;
     }
+}
+
+.scroll{
+    background: rgba(51, 51, 51, 0.8);
+}
+
+.scroll-text{
+    color: #fff;
 }
     
