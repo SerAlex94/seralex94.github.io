@@ -162,7 +162,7 @@ $(document).ready(function(){
   });
 
   $(".logo__img,.contacts__logo-img").click(function() {
-    $("html, body").animate({ scrollTop: 100}, "low");
+    $("html, body").animate({ scrollTop: 0}, "low");
     return false;
   });
 

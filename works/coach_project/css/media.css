@@ -45,7 +45,7 @@
 
 	.navi{
 		position: absolute;
-    	top: -300px;
+    	top: -400px;
     	width: 100%;
 		left: 0;
     	right: 0;
@@ -149,6 +149,10 @@
     	align-items: center;
     	flex-direction: row;
     	justify-content: space-around;
+	}
+
+	.footer__btn {
+		padding: 5px 5px;
 	}
 
 	/* .footer__inner-heading, .timer{
@@ -273,7 +277,7 @@
 	}
 	.about__heading, .coaching__heading, .clients__heading, .start__heading, .testimonials__heading, .contacts__heading {
 		font-size: 36px;
-		padding: 60px 0;
+		padding: 30px 0;
 	}
 	.clients__heading-secondary {
 		width: 80%;
