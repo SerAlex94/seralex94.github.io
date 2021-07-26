@@ -5,6 +5,7 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
     scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 ul{
@@ -76,8 +77,11 @@ a{
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
-.main__btn:hover,.coaching__btn:hover,.clients__btn:hover,.start__price-btn:hover, .footer__btn:hover, .btn__popup:hover{
+.main__btn:hover,.coaching__btn:hover,.clients__btn:hover, .footer__btn:hover, .btn__popup:hover{
     opacity: 0.8;
+    box-shadow: 0px 0px 10px 5px grey;
+}
+.start__price-btn:hover{
     box-shadow: 0px 0px 10px 5px grey;
 }
 .coaching__btn{
@@ -841,7 +845,7 @@ a{
 }
 
 .timer{
-    padding-bottom: 5px;
+    padding: 8px 0;
     width: 33%;
 }
 
@@ -922,7 +926,7 @@ a{
     border: 5px solid #0067a8;
     padding: 15px;
     width: 500px;
-    margin: 30px 10px;
+    /* margin: 30px 10px; */
     border-radius: 10px;
     text-align: center;
 }
