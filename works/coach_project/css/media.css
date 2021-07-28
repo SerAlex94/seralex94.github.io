@@ -159,11 +159,11 @@
 	} */
 }
 
-@media screen and (max-width:800px) {
+/* @media screen and (max-width:800px) {
 	.btn__footer-width {
 		width: 40%;
 	}
-}
+} */
 
 @media screen and (max-width:700px) {
 	.navi.open-menu {
@@ -299,9 +299,9 @@
 	.footer__btn{
 		font-size: 10px;
 	}
-	/* .btn__up-img {
+	.btn__up-img {
 		width: 40px;
-	} */
+	}
 	.btn__up-img {
 		top: -50px;
 	}
